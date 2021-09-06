@@ -12,7 +12,8 @@ const addOne = (arr) => {
   // Solution code here...
   let new_arr = []
   arr.forEach(element => {
-    new_arr.push(element++)
+    element++
+    new_arr.push(element)
   });
   return new_arr
 };
@@ -28,7 +29,7 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 const addExclamation = (arr) => {
   // Solution code here...
   let new_arr= []
-  arr.array.forEach(item => {
+  arr.forEach(item => {
     new_arr.push(`${item}!`)
   });
   return new_arr
@@ -45,7 +46,7 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 const allUpperCase = (arr) => {
   // Solution code here...
   let new_arr =[]
-  arr.array.forEach(element => {
+  arr.forEach(element => {
     new_arr.push(element.toUpperCase())
   });
   return new_arr
@@ -69,7 +70,9 @@ const greeting = (word) => {
 const speaker = (words, callback) => {
   // Solution code here...
   let new_arr =[]
-  new_arr.push(words.array.forEach(greeting))
+  words.forEach(element => {
+      new_arr.push(callback(element)) 
+  });
   return new_arr
 };
 
@@ -96,6 +99,10 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  for(let i=0;i<times;i++){
+      callback(arr,num)
+  }
+  return arr
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,8 +125,14 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+ let available_items = []
+ availableItems.forEach(item =>{
+     if (item.available == true){
+      available_items.push(item.name)
+     }
+ })
+ return available_items 
 };
-
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
 
@@ -136,6 +149,24 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let new_arr=[]
+  arr.forEach(element => {
+      if (element%3 == 0 && element%5 == 0){
+          new_arr.push('Fizz Buzz')
+          return;
+      }
+      if (element%3 == 0){
+          new_arr.push('Fizz')
+      }      
+      else if (element%5 == 0){
+          new_arr.push('Buzz')
+      }
+      else {
+          new_arr.push(element)
+      }
+      
+  });
+  return new_arr
 };
 
 /* ------------------------------------------------------------------------------------------------
