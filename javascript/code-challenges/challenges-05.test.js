@@ -13,7 +13,7 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
-  fullNames = [] 
+  let fullNames = [] 
   people.map(person=>{
     fullNames.push (`${person.firstName} ${person.lastName}`)
   })
@@ -29,7 +29,7 @@ Write a function named addValues that, given an array of numbers as input, uses 
 
 const addValues = (arr) => {
   // Solution code here...
-  return arr.reduce((a,b)=>{return a+b})
+  return arr.reduce((a=0,b)=>{return a+b},0)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -47,8 +47,8 @@ Write a function named addPurchases that, given an array of objects as input, us
 const addPurchases = (arr) => {
   // Solution code here...
   return arr.reduce((a,b)=>{
-    return a.purchasePrice + b.purchasePrice
-  })
+    return a + b.purchasePrice
+  },0)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -140,18 +140,20 @@ Write a function named reversedString that takes in a string and returns a strin
 
 Note: You must use reduce for this challenge. You may not use the built-in .reverse() string method.
 ------------------------------------------------------------------------------------------------ */
+// used MDN https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+// used this blog https://www.samanthaming.com/tidbits/74-how-to-reverse-an-array/ 
+// these resorses used as a referancs no copy paste except the methods name
 
 const reversedString = (str) => {
   // Solution code here...
-  str_list = str.split()
+  let str_list = str.split("")
   let length = str_list.length
-  str_list.reduce((a,char)=>{
-    if(a.length===length){
-      return char
-    }
-  })
+   str_list = str_list.reduceRight((a,value)=>{
+    a.push(value)
+    return a
+  },[])
+  return str_list.join('')
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
