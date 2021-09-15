@@ -56,7 +56,10 @@ let characters = [
 
 const sortByChildren = (charArray) => {
   // Solution code here...
-  // return charArray.sort((a,b)=>(b.children.length-a.childern.length))
+  charArray.map(item=>{
+    item['number'] = item.children.length
+  })
+  return charArray.sort((a,b)=>b.number-a.number)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,9 +74,12 @@ Write a function named containsW that takes in a string.
 
 const containsW = (str) => {
   // Solution code here...
-  let arr= str.split('');
-  return arr.includes('w')
+
+  regex = /[.w]/
+  // let arr= str.split('');
+  return regex.test(str)
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -89,18 +95,8 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
-  if(typeof input === 'number'){
-    return true
-  }else if(typeof input === 'string') {
-    input.split('')
-    input.map(char =>{
-      if(Number(char)==='string'){
-        return true
-      }
-    })}
-    else {
-      return false 
-    }
+ let regex = /[0-9]/ 
+ return regex.test(input)
   }
 ;
 
@@ -111,10 +107,12 @@ Write a function named containsWorld that takes in a string or number of any len
 
 ------------------------------------------------------------------------------------------------ */
 
+
 const containsWorld = (input) => {
   // Solution code here...
+  regex = /world/
   let arr = input.split(' ')
-  return arr.includes('world')
+  return regex.test(input)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -131,9 +129,11 @@ Return an array containing all the matches.
 const isCapitalized = (str) => {
   // Solution code here...
   let arr = str.split(' ')
-  return arr.filter(item => item[0].toUpperCase())
-
+  let regex =/^[A-Z]/; 
+  return arr.filter(item =>regex.test(item))
 };
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -143,6 +143,8 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 
 const citiesAtoJ = (arr) => {
   // Solution code here...
+  let regex = /^[A-J]/
+  return arr.filter(item=>regex.test(item))
 };
 
 /* ------------------------------------------------------------------------------------------------
