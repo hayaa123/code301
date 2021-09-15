@@ -59,7 +59,9 @@ const sortByChildren = (charArray) => {
   charArray.map(item=>{
     item['number'] = item.children.length
   })
-  return charArray.sort((a,b)=>b.number-a.number)
+  return charArray.sort((a,b)=>{
+   return (a.number !== b.number) ? a.number-b.number : a-b
+  })
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -75,7 +77,7 @@ Write a function named containsW that takes in a string.
 const containsW = (str) => {
   // Solution code here...
 
-  regex = /[.w]/
+  let regex = /[.w]/
   // let arr= str.split('');
   return regex.test(str)
 };
@@ -110,7 +112,7 @@ Write a function named containsWorld that takes in a string or number of any len
 
 const containsWorld = (input) => {
   // Solution code here...
-  regex = /world/
+  let regex = /world/
   let arr = input.split(' ')
   return regex.test(input)
 };
