@@ -85,16 +85,17 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
-  let arr = []
-  input.map(arr => {
-    arr.map(num => {
-      if(typeof(num)!=='number' && nu % 5 ===0){
-        arr.pish(num)
+  let arr1 = [];
+  input.map((arr) => {
+    let arr2 = [];
+    arr.map((num) => {
+      if (typeof num === "number" && num % 5 === 0) {
+        arr2.push(Math.pow(2, num));
       }
-    })
-  })
-  return arr
-
+    });
+    arr1.push(arr2);
+  });
+  return arr1;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -161,16 +162,34 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+  people = ""
+  data.map(obj =>{
+    if (people !==''){
+        people += ' and '
+    } 
+    if (obj.gender === "female" || obj.gender==="male"){
+        people+= obj.name 
+    }
+  })
+  return people
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
 
-Write a function named findShortest that, given the Star Wars data from Challenge 6, uses any combination of filter, map and reduce to return the name of the character who is the shortest in height.
+Write a function named findShortest that,
+given the Star Wars data from Challenge 6,
+uses any combination of filter,
+map and reduce to return the name of the character who 
+is the shortest in height.
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
   // Solution code here...
+  let shortest_height = 200
+  let shortest = data.sort((a,b)=>{return a.height -b.height})
+  
+  return shortest[0].name
 };
 
 /* ------------------------------------------------------------------------------------------------
