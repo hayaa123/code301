@@ -162,16 +162,13 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
-  people = ""
+  let people = []
   data.map(obj =>{
-    if (people !==''){
-        people += ' and '
-    } 
-    if (obj.gender === "female" || obj.gender==="male"){
-        people+= obj.name 
+    if (obj.gender === "female" || obj.gender==="male"){ 
+        people.push(obj.name)  
     }
   })
-  return people
+  return people.join(' and ')
 };
 
 /* ------------------------------------------------------------------------------------------------
