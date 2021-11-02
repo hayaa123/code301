@@ -1,4 +1,4 @@
-# Data Structures and Algorithms
+<!-- # Data Structures and Algorithms
 
 See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
 
@@ -16,8 +16,14 @@ To run your tests
 
 - Change to the `javascript` folder
 - run `npm test` to run all of the tests
-- run `npm test ##` to only run tests for challenge ## (i.e. 01)
+- run `npm test ##` to only run tests for challenge ## (i.e. 01) -->
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+table of content
+
+| code challenge name                                           | description                                 |
+| ------------------------------------------------------------- | ------------------------------------------- |
+| [array_reverse](./python/array_reverse/README.md)             | to reverse array                            |
+| [array_insert_shift](./python/array_insert_shift/README.md)   | to insert a number inside a middle of array |
+| [array_binary_search](./python/array_binary_search/README.md) | make a binary search algorithem             |
