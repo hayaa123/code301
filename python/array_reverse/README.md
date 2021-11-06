@@ -2,7 +2,7 @@
 the challenge requires us to make a function that is responsible of reverse a list and return the reversed version
 
 ## Whiteboard Process
-![img](./array_reverse.jpg)
+![img](./array_reverse3.png)
 
 ## Approach & Efficiency
 
@@ -10,3 +10,5 @@ the challenge requires us to make a function that is responsible of reverse a li
 
 I used the property of indexing that allows us to reverse string by index it be -1 step 
 it work in the efficency of O(n)
+
+space complixity -> O(n)
