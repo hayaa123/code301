@@ -1,5 +1,6 @@
+import pytest
 from linked_list.linked_list import LinkedList
-# import pytest
+
 
 # 1-Can successfully instantiate an empty linked list
 def test_empty():
@@ -48,16 +49,17 @@ def test_notincludes_5():
     assert actual == expected
 
 # 7-Can properly return a collection of all the values that exist in the linked list
-def test_print():
-    ll = LinkedList()
-    ll.insert(5)
-    ll.insert(6)
+def test_print(ll):
+    # ll = LinkedList()
+    # ll.insert(5)
+    # ll.insert(6)
     assert str(ll) == "{6}->{5}->Null"
 
 
-# @pytest.fixture
-# def ll ():
-#     ll= LinkedList
-#     ll.insert(4)
-#     ll.insert(5)
-#     ll.insert(6)
+@pytest.fixture
+def ll ():
+    ll= LinkedList()
+
+    ll.insert(5)
+    ll.insert(6)
+    return ll 
