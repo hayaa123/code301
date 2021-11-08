@@ -1,3 +1,4 @@
+from abc import ABC
 import pytest
 from linked_list.linked_list import LinkedList
 
@@ -97,7 +98,36 @@ def test_isert_0_after_3(ll2):
     ll2.insert_after(3,0)
     assert expected == str(ll2)
 
+# Where k is greater than the length of the linked list
 
+def test_kthFromEnd_4_in_len_3_list(ll2):
+    expected = "Exception" 
+    actual = ll2.kthFromEnd(4)
+    assert actual == expected
+
+# Where k and the length of the list are the same
+def test_kthFromEnd_2_in_len_3_list(ll2):
+    expected = 1
+    actual = ll2.kthFromEnd(2)
+    assert actual == expected
+
+# Where k is not a positive integer
+def test_kthFromEnd_negative2_in_len_3_list(ll2):
+    expected =  "Exception" 
+    actual = ll2.kthFromEnd(-2)
+    assert actual == expected
+
+# Where the linked list is of a size 1
+def test_kthFromEnd_of_len_1():
+    ll = LinkedList()
+    ll.insert(1)
+    actual = ll.kthFromEnd(0)
+    expected = 1
+
+# “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+def test_kthFromEnd_k_in_middle (ll2):
+    expected = 2
+    actual = ll2.kthFromEnd(1)
 
 @pytest.fixture
 def ll ():
