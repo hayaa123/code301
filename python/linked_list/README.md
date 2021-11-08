@@ -17,6 +17,8 @@ insert_before --> insert a new value before a specific part of linked list
 
 insert_after --> insert a new value after a specific part of linked list
 
+kthFromEnd --> return the kth value from the tail 
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 ### efficiency
@@ -33,6 +35,8 @@ insert_before --> O(n)
 
 insert_after --> O (n)
 
+kthFromEnd --> O(n)
+
 ### approch
 
 insert --> I use assigntment for this method I assigned the new node by the head after linked it with the privious head
@@ -47,6 +51,7 @@ insert_before --> TDD approach
 
 insert_after --> TDD aproach
 
+kthFromEnd --> TDD aproach
 
 ## API
 <!-- Description of each method publicly available to your Linked List -->
@@ -61,6 +66,8 @@ append --> it takes a value as an input and add it at the end of the linked list
 insert_before --> it takes tow argument a value in the position and the new value that we want to add then it add the new value before the positioned value
 
 insert_after --> it takes tow argument a value in the position and the new value that we want to add then it add the new value before the positioned value
+
+kthFromEnd -->it takes the kth position as an input and return the value of that position from the tail of the linked list
 
 ## white board 
 
@@ -81,3 +88,7 @@ insert_after --> it takes tow argument a value in the position and the new value
 ### insert_after
 
 ![insert_after](./assets/insert_after.png)
+
+### kthFromEnd
+
+![kthFromEnd](./assets/kthFromEnd.png)

@@ -81,10 +81,33 @@ class LinkedList:
             current = current.next
         node.next = current.next
         current.next = node
+    def kthFromEnd(self,K):
+        try:
+            if K < 0:
+                raise Exception
+            current =self.head
+            temp = self.head
+            gap =0 
+            while current.next != None:
+                if gap == K :
+                    temp = temp.next
+                    gap-=1
+                current = current.next
+                gap+=1
+            
+            if gap <K: 
+                raise Exception
+            
+            return temp.value
+        except Exception:
+            return "Exception"
 
 
 if __name__ == "__main__":
     ll = LinkedList()
     ll.insert(4)
     ll.insert(5)
-    # print(ll.get_head())
+    ll.append(3)
+    ll.append(1)
+    print(ll.__str__())
+    print(ll.kthFromEnd(4))
