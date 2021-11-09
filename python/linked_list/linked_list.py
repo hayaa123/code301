@@ -103,6 +103,28 @@ class LinkedList:
             return "Exception"
 
 
+    def linked_list_zip(self,otherll):
+        try:
+            if otherll == None:
+                raise ValueError
+            
+            other_current = otherll.head
+            current = self.head
+
+            # in this function I got some help from my collegue hannen darwish 
+            while current !=None and otherll != None:
+                temp_other = other_current.next
+                temp = current.next
+
+                other_current.next = temp_other
+                current = other_current
+        
+                other_current = temp_other.next 
+                current = temp.next
+        except ValueError:
+            return "you should input a linked list as an argument"
+
+
 if __name__ == "__main__":
     ll = LinkedList()
     ll.insert(4)
