@@ -19,6 +19,8 @@ insert_after --> insert a new value after a specific part of linked list
 
 kthFromEnd --> return the kth value from the tail 
 
+linked-list-zip --> ziped an other linked list to the original one by zipping
+
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 ### efficiency
@@ -37,6 +39,8 @@ insert_after --> O (n)
 
 kthFromEnd --> O(n)
 
+linked-list-zip --> O(n)
+
 ### approch
 
 insert --> I use assigntment for this method I assigned the new node by the head after linked it with the privious head
@@ -53,6 +57,8 @@ insert_after --> TDD aproach
 
 kthFromEnd --> TDD aproach
 
+linked-list-zip --> not yet
+
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 insert --> it require an input of the value you want to add into the list and output nothing ,but it add the value as on the begining of the list 
@@ -68,6 +74,8 @@ insert_before --> it takes tow argument a value in the position and the new valu
 insert_after --> it takes tow argument a value in the position and the new value that we want to add then it add the new value before the positioned value
 
 kthFromEnd -->it takes the kth position as an input and return the value of that position from the tail of the linked list
+
+linked-list-zip --> takes other linked list as an argumant and merge it with the original one useing zipping 
 
 ## white board 
 
@@ -92,3 +100,7 @@ kthFromEnd -->it takes the kth position as an input and return the value of that
 ### kthFromEnd
 
 ![kthFromEnd](./assets/kthFromEnd.png)
+
+### linked-list-zip 
+
+![linked-list-zip](./assets/linked-list-zip.png)
