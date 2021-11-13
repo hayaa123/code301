@@ -28,4 +28,4 @@ table of content
 | [array_insert_shift](./python/array_insert_shift/README.md)   | to insert a number inside a middle of array |
 | [array_binary_search](./python/array_binary_search/README.md) | make a binary search algorithem             |
 | [linked_list](./python/linked_list/README.md)                 | Singly Linked List                          |
-
+| [stack-and-queue](./python/stack_and_queue/README.md)         | stacks and queue data structure and methods |
