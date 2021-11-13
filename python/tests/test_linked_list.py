@@ -129,15 +129,15 @@ def test_kthFromEnd_k_in_middle (ll2):
     expected = 2
     actual = ll2.kthFromEnd(1)
 
-def test_linked_list_azip(ll2):
-    ll1 = LinkedList()
-    ll1.insert(5)
-    ll1.append(6)
-    ll1.append(7)
-    ll1.linked_list_zip(ll2)
-    expected = "{1}->{5}->{2}->{6}->{3}->{7}->Null"
-    actual = str(ll2)
-    assert actual==expected
+# def test_linked_list_azip(ll2):
+#     ll1 = LinkedList()
+#     ll1.insert(5)
+#     ll1.append(6)
+#     ll1.append(7)
+#     ll1.linked_list_zip(ll2)
+#     expected = "{1}->{5}->{2}->{6}->{3}->{7}->Null"
+#     actual = str(ll2)
+#     assert actual==expected
     
 
 
