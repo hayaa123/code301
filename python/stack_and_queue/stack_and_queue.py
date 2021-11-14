@@ -62,7 +62,7 @@ class Stack:
         return temp.value
 
     def is_empty(self):
-        return self.head == None
+        return self.top == None
 
     def peek(self):
         if self.top == None:
