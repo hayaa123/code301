@@ -1,4 +1,4 @@
-from stack_and_queue.stack_and_queue import Stack
+from stack_and_queue.stack_and_queue import  Stack
 
 class PsudoQueue:
     """
@@ -44,3 +44,19 @@ class PsudoQueue:
         if self.rear_stack.top == None :
             return True 
         return False
+
+    def __str__(self) :
+        str = ""
+        currrent = self.stack1.top
+        while currrent != None :
+            str += f"[{currrent.value}]->"
+            currrent = currrent.next
+        print(currrent)
+        str += "Null"
+        return str
+
+if __name__ == "__main__":
+    queue = PsudoQueue()
+    queue.enqueue(1)
+    queue.enqueue(2)
+    print(queue)
