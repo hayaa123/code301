@@ -10,8 +10,8 @@ def test_enqueue_into_queue(queue):
 # # Can successfully enqueue multiple values into a queue
 
 def test_enqueue_multiple_values (queue):
-    actual = queue.stack1.top.next.value
-    expected = 2
+    actual = str(queue)
+    expected = '[1]->[2]->[3]->Null'
     assert actual == expected
 
 # # # Can successfully dequeue out of a queue the expected value
