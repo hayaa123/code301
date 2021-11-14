@@ -29,3 +29,4 @@ table of content
 | [array_binary_search](./python/array_binary_search/README.md) | make a binary search algorithem             |
 | [linked_list](./python/linked_list/README.md)                 | Singly Linked List                          |
 | [stack-and-queue](./python/stack_and_queue/README.md)         | stacks and queue data structure and methods |
+| [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)   | psudo queue using stack                     |
