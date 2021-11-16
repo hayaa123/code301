@@ -15,12 +15,13 @@ class Dog:
 class Shelter :
     def __init__(self):
         self.cats = Queue()
-        self.Dogs = Queue()
+        self.dogs = Queue()
     def enqueue(self,animal):
         if str(animal) == str(Cat(animal.name)):
             self.cats.enqueue(animal)
-        elif animal ==Dog(animal.name):
+        elif str(animal) == str(Dog(animal.name)):
             self.dogs.enqueue(animal)
+            
     def dequeue(self,pref):
         if pref == "cat":
             return self.cats.dequeue()
