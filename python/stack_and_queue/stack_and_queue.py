@@ -12,9 +12,10 @@ class Queue:
     def enqueue(self, value):
 
         node = Node(value)
-        if self.front == None:
+        if self.front == None and self.rear==None:
             self.front = node
-        elif self.rear == None:
+            self.rear = node
+        elif self.rear == self.front:
             self.rear = node
             self.front.next = self.rear
         else:
@@ -23,13 +24,12 @@ class Queue:
           self.rear.next = None
 
     def dequeue(self):
-        if self.front == None and self.rear == None:
+        if self.front == None :
           raise ValueError
-
-
-        if self.front.next == None and self.rear==self.front:
-          self.rear =None
-          return self.front
+        if self.rear==self.front:
+            self.rear =  None
+            self.front = None
+            return self.front
         temp = self.front
         self.front = self.front.next
         temp.next = None

@@ -22,11 +22,12 @@ To run your tests
 
 table of content
 
-| code challenge name                                           | description                                 |
-| ------------------------------------------------------------- | ------------------------------------------- |
-| [array_reverse](./python/array_reverse/README.md)             | to reverse array                            |
-| [array_insert_shift](./python/array_insert_shift/README.md)   | to insert a number inside a middle of array |
-| [array_binary_search](./python/array_binary_search/README.md) | make a binary search algorithem             |
-| [linked_list](./python/linked_list/README.md)                 | Singly Linked List                          |
-| [stack-and-queue](./python/stack_and_queue/README.md)         | stacks and queue data structure and methods |
-| [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)   | psudo queue using stack                     |
+| code challenge name                                                         | description                                 |
+| --------------------------------------------------------------------------- | ------------------------------------------- |
+| [array_reverse](./python/array_reverse/README.md)                           | to reverse array                            |
+| [array_insert_shift](./python/array_insert_shift/README.md)                 | to insert a number inside a middle of array |
+| [array_binary_search](./python/array_binary_search/README.md)               | make a binary search algorithem             |
+| [linked_list](./python/linked_list/README.md)                               | Singly Linked List                          |
+| [stack-and-queue](./python/stack_and_queue/README.md)                       | stacks and queue data structure and methods |
+| [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)                 | psudo queue using stack                     |
+| [stack-queue-animal-shelter](./python/stack_queue_animal_shelter/README.md) | queue animal shelter                        |
