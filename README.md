@@ -31,3 +31,4 @@ table of content
 | [stack-and-queue](./python/stack_and_queue/README.md)                       | stacks and queue data structure and methods |
 | [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)                 | psudo queue using stack                     |
 | [stack-queue-animal-shelter](./python/stack_queue_animal_shelter/README.md) | queue animal shelter                        |
+| [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                          |
