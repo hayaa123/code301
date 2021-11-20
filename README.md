@@ -32,3 +32,4 @@ table of content
 | [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)                 | psudo queue using stack                     |
 | [stack-queue-animal-shelter](./python/stack_queue_animal_shelter/README.md) | queue animal shelter                        |
 | [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                          |
+| [tree](./python/tree/README.md)                                             | binary tree                                 |
