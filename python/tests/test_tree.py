@@ -25,6 +25,14 @@ def test_add_left_to_root ():
     binart_tree.add(3)
     actual = binart_tree.root.left.value
     assert actual == expected
+
+def test_add_right_to_root ():
+    expected = 5
+    binart_tree =  BinartSearchTree()
+    binart_tree.add(4) 
+    binart_tree.add(5)
+    actual = binart_tree.root.right.value
+    assert actual == expected
     
 # Can successfully return a collection from a preorder traversal
 def test_pre_order_treverse(tree):
