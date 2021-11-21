@@ -40,6 +40,26 @@ class BinaryTree :
             arr.append(root.value)
             return arr 
         return _treverse(self.root)
+    
+    def max(self):
+        """
+        this method is to find the max value in the tree
+        """
+        if self.root==None :
+          raise Exception
+        
+        self.holder = self.root.value 
+        def _find(root):
+            if root.value>self.holder:
+                self.holder = root.value
+            if root.right: 
+                _find(root.right)
+            if root.left:
+                _find(root.left)
+            return self.holder
+        return _find(self.root)
+
+    
 
 
 class BinartSearchTree(BinaryTree):
