@@ -24,6 +24,10 @@ this challenge requre making a binary tree and a binary search tree
         1- pre_order
         2-in_order
         3- post order
+    
+    it also have 
+
+        1- max method --> which return the max value 
      
 - binary search
 
@@ -48,6 +52,7 @@ in order treversal --> used recursion to iterate over every element and add it t
 
 post order treversal --> used recursion to iterate over every element and add it to list , finaly displayed the list 
 
+max --> used recursionto iterate over every element and compare it with a holder variable and keep assigning the larger value to it 
 
 <span style = "text-decoration:underline">Efficiency</span>
 
@@ -56,6 +61,8 @@ pre order treversal --> O(n) time ,O(n)space
 in order treversal --> O(n)time ,O(n)space
 
 post order treversal --> O(n) time and space 
+
+max --> O(n) time , O(1) space
 
 <span style="color:#0a786d; ">**Binary Search Tree** </span>
 
@@ -92,7 +99,9 @@ pre order treversal --> this method require no inputs and it return an array wit
 
 in orded treversal --> this method require no inputs and it return an array with the tree values in on order 
 
-post order treversal --> this method require no inputs and it return an array with the tree values in post order 
+post order treversal --> this method require no inputs and it return an array with the tree values in post order
+
+max --> this method require no inputs and return the maximum value in the tree as an output 
 
 <span style="color:#0a786d; ">**Binary Search Tree** </span>
 
@@ -105,3 +114,12 @@ contains -->  this method require a value as an input and return True / False as
 ![](assets/binary.png)
 
 ![](assets/binary_search.png)
+
+Max 
+![](assets/tree-max.png)
+
+## linkes 
+
+[the code](tree.py)
+
+[testing](../tests/test_tree.py)

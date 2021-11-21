@@ -50,6 +50,18 @@ def test_post_order_treverse(tree):
     actual = tree.post_order()
     assert expected == actual
 
+# can sucessfully return the maximum value in a binary tree 
+
+def test_binary_max(tree):
+    expected = 15
+    actual = tree.max()
+    assert expected == actual
+
+def test_max_of_empty_tree():
+    tree = BinaryTree()
+    with pytest.raises(Exception):
+        tree.max()        
+
 
 @pytest.fixture
 def tree ():
