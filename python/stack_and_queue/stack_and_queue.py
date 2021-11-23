@@ -27,9 +27,10 @@ class Queue:
         if self.front == None :
           raise ValueError
         if self.rear==self.front:
+            temp = self.front
             self.rear =  None
             self.front = None
-            return self.front
+            return temp.value
         temp = self.front
         self.front = self.front.next
         temp.next = None
