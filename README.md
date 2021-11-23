@@ -34,3 +34,4 @@ table of content
 | [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                          |
 | [tree](./python/tree/README.md)                                             | binary tree                                 |
 | [tree-breadth-first](./python/tree_breadth_first/README.md)                 | binary tree breadth first order             |
+| [tree-fizz-buzz](./python/tree_fizz_buzz/README.md)                 | k-ary tree and fizzbuzz function        |
