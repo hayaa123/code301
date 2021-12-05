@@ -34,3 +34,4 @@ table of content
 | [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                          |
 | [tree](./python/tree/README.md)                                             | binary tree                                 |
 | [tree-breadth-first](./python/tree_breadth_first/README.md)                 | binary tree breadth first order             |
+| [Insertion Sort](./python/insertion_sort/README.md)                 | binary tree breadth first order             |

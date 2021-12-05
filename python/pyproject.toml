@@ -5,11 +5,12 @@ description = ""
 authors = ["JB-Tellez <jb.tellez@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "~3.8"
 py = "^1.11.0"
+pytest = "^6.2.5"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2.5"
 pytest-watch = "^4.2.0"
 black = "^20.8b1"
 
