@@ -16,5 +16,5 @@ if you are interested in testing you can find it in the link below
 
 api
 
-insrtion sort -> this function is ment to sort the array in insertion sort algorithm 
+merge sort -> this function is ment to sort the array in merge sort algorithm 
     it takes arr as input and return sorted array

@@ -1,5 +1,8 @@
 
 def merge_sort(arr):
+    '''
+    this functio takes arr as an input and return you the sorted array using merge sort algorithem 
+    '''
     n= len(arr)
 
     if n > 1 :
