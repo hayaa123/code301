@@ -34,6 +34,7 @@ table of content
 | [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                          |
 | [tree](./python/tree/README.md)                                             | binary tree                                 |
 | [tree-breadth-first](./python/tree_breadth_first/README.md)                 | binary tree breadth first order             |
-| [Insertion Sort](./python/insertion_sort/README.md)                 | Insertion Sort            |
-| [Merge Sort](./python/merge_sort/README.md)                 | Merge Sort            |
-| [hash_table](./python/hash_table/README.md)                 | hash_table           |
+| [Insertion Sort](./python/insertion_sort/README.md)                         | Insertion Sort                              |
+| [Merge Sort](./python/merge_sort/README.md)                                 | Merge Sort                                  |
+| [hash_table](./python/hash_table/README.md)                                 | hash_table                                  |
+| [hashmap-repeated-word](./python/hashmap_repeated_word/README.md)            | catch the first repeated word               |
