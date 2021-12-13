@@ -24,10 +24,23 @@ class HashTable:
                    new_pair = [key,value]
                    chain.append(existing_pair) 
                    chain.append(new_pair)
+                   self.map[index] = chain
+                   
 
     def get (self,key):
         index = self.hash(key)
-        return self.map[index]
+        if self.map[index] != None:
+            if isinstance(self.map[index],LinkedList):
+                    current = self.map[index].head
+                    while current :
+                            if current.value[0] == key :
+                                return current.value[1]
+                            current = current.next
+                    else:
+                        return "your key does not exist in the hash map" 
+            return self.map[index][1]
+        else : 
+            return None
     def contains(self,key):
         index = self.hash(key)
         return self.map[index] != None
