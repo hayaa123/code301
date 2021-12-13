@@ -37,3 +37,4 @@ table of content
 | [Insertion Sort](./python/insertion_sort/README.md)                 | Insertion Sort            |
 | [Merge Sort](./python/merge_sort/README.md)                 | Merge Sort            |
 | [hash_table](./python/hash_table/README.md)                 | hash_table           |
+| [tree_intersection](./python/tree_intersection/README.md)                 | tree_intersection           |
