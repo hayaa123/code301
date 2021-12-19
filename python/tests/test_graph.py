@@ -70,8 +70,14 @@ def test_get_empty():
     expected = set()
     assert actual == expected
 
+# Breadth first order 
 
-
+def test_breadth_first(graph):
+    the_graph = graph[0]
+    starting_node = graph[1]
+    actual = the_graph.breadth_first(starting_node)
+    expected = [starting_node,graph[2],graph[3]]
+    assert actual == expected
 @pytest.fixture
 def graph():
     graph = Graph()

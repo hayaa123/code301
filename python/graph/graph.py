@@ -1,3 +1,5 @@
+from stack_and_queue.stack_and_queue import Queue
+
 class Vertix :
     """
     building block for graph takes value as input 
@@ -73,3 +75,31 @@ class Graph:
         this method will return the number of nodes in the graph 
         """
         return len(self._graph_list.keys())
+
+    def breadth_first (self,start_vertix):
+        """
+        this method takes start_vertix as an input 
+        output --> array of graph nodes values in breadth first order 
+        """
+        queue = Queue()
+        visited = set()
+        result = [] 
+
+        queue.enqueue(start_vertix)
+        visited.add(start_vertix)
+        result.append(start_vertix)
+
+        while not queue.is_empty():
+            current_vertix = queue.dequeue()
+
+            neighbors = self.get_edge(current_vertix)
+            for edge in neighbors :
+                neighbor = edge.vertix
+
+                if neighbor not in visited :
+                    queue.enqueue(neighbor)
+                    visited.add(neighbor)
+                    result.append(neighbor)
+
+        return result
+
