@@ -5,7 +5,7 @@ this challenge reqiures to define a function that can determine whether there is
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](assets/is_direct.png)
+![](is_direct.png)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 time --> O((n+n)^n)becase we loop2 times in the first loop 
