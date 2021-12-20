@@ -22,21 +22,22 @@ To run your tests
 
 table of content
 
-| code challenge name                                                         | description                                 |
-| --------------------------------------------------------------------------- | ------------------------------------------- |
-| [array_reverse](./python/array_reverse/README.md)                           | to reverse array                            |
-| [array_insert_shift](./python/array_insert_shift/README.md)                 | to insert a number inside a middle of array |
-| [array_binary_search](./python/array_binary_search/README.md)               | make a binary search algorithem             |
-| [linked_list](./python/linked_list/README.md)                               | Singly Linked List                          |
-| [stack-and-queue](./python/stack_and_queue/README.md)                       | stacks and queue data structure and methods |
-| [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)                 | psudo queue using stack                     |
-| [stack-queue-animal-shelter](./python/stack_queue_animal_shelter/README.md) | queue animal shelter                        |
-| [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                          |
-| [tree](./python/tree/README.md)                                             | binary tree                                 |
-| [tree-breadth-first](./python/tree_breadth_first/README.md)                 | binary tree breadth first order             |
-| [Insertion Sort](./python/insertion_sort/README.md)                         | Insertion Sort                              |
-| [Merge Sort](./python/merge_sort/README.md)                                 | Merge Sort                                  |
-| [hash_table](./python/hash_table/README.md)                                 | hash_table                                  |
-| [tree_intersection](./python/tree_intersection/README.md)                   | tree_intersection                           |
-| [hashmap-left-join](./python/hashmap_left_join/README.md)                   | hashmap-left-join                           |
-| [graph](./python/graph/README.md)                                           | graph                                       |
+| code challenge name                                                         | description                                           |
+| --------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [array_reverse](./python/array_reverse/README.md)                           | to reverse array                                      |
+| [array_insert_shift](./python/array_insert_shift/README.md)                 | to insert a number inside a middle of array           |
+| [array_binary_search](./python/array_binary_search/README.md)               | make a binary search algorithem                       |
+| [linked_list](./python/linked_list/README.md)                               | Singly Linked List                                    |
+| [stack-and-queue](./python/stack_and_queue/README.md)                       | stacks and queue data structure and methods           |
+| [stack-queue-pseudo](./python/stack_queue_pseudo/README.md)                 | psudo queue using stack                               |
+| [stack-queue-animal-shelter](./python/stack_queue_animal_shelter/README.md) | queue animal shelter                                  |
+| [stack-queue-brackets](./python/stack_queue_brackets/README.md)             | bracets validation                                    |
+| [tree](./python/tree/README.md)                                             | binary tree                                           |
+| [tree-breadth-first](./python/tree_breadth_first/README.md)                 | binary tree breadth first order                       |
+| [Insertion Sort](./python/insertion_sort/README.md)                         | Insertion Sort                                        |
+| [Merge Sort](./python/merge_sort/README.md)                                 | Merge Sort                                            |
+| [hash_table](./python/hash_table/README.md)                                 | hash_table                                            |
+| [tree_intersection](./python/tree_intersection/README.md)                   | tree_intersection                                     |
+| [hashmap-left-join](./python/hashmap_left_join/README.md)                   | hashmap-left-join                                     |
+| [graph](./python/graph/README.md)                                           | graph                                                 |
+| [graph-business-trip](./python/graph_business_trip/README.md)               | find if there are direct way to travel over countries |
