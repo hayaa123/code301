@@ -1,4 +1,4 @@
-from stack_and_queue.stack_and_queue import Queue
+from stack_and_queue.stack_and_queue import Queue,Stack
 
 class Vertix :
     """
@@ -103,3 +103,20 @@ class Graph:
 
         return result
 
+    def DFT(self,first_node):
+        visited = []
+        stack = Stack()
+        stack.push(first_node)
+        visited.apped(first_node)
+
+        while not stack.is_empty():
+            for vertix in [edge.vertix for edge in self.get_edge(stack.top)]:
+
+                if vertix not in visited :
+                        stack.add(vertix) 
+                        visited.append(vertix.value)
+                        break      
+                
+        stack.pop()    
+        
+        return visited 
