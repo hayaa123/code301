@@ -24,7 +24,9 @@ get_neighbors -> get all the neighbor vertices for a specific node (vertix)
 
 size -> gives the size of the graph (how many nodes in the graph)
 
-breadth_first -> gives the elements in the graph in breadth first way
+breadth_first -> gives the elements in the graph in breadth first order
+
+DFT --> gives the elements in the graph in depth first order
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -42,6 +44,8 @@ get_neighbors -> return all the values for a spicific key in the graph inner dic
 size -> return the length of the graph inner dictionary  
 
 breadth_first -> iterate over every node and make sure that it exist in the result
+
+DFT -> add the unvisited nodes to stack to keep track of the tree until we reach its root 
 
 **Efficiency**
 
@@ -61,6 +65,8 @@ size -> O(1)
 
 breadth_first -> O(n) time , O(n + n ) space : visited and result lists 
 
+DFT --> O(n+n) space:visited and stack  , O(n) time 
+
 ## API
 <!-- Description of each method publicly available in your Graph -->
 [code](graph.py)
@@ -70,3 +76,5 @@ breadth_first -> O(n) time , O(n + n ) space : visited and result lists
 ![](assets/graph.png)
 
 ![](assets/graph_breadth_first.png)
+
+![](assets/DFT.png)
